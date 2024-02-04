@@ -8,6 +8,11 @@ body {
   height: 300px;
   border: 1px solid orangered;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.area::-webkit-scrollbar {
+  display: none;
 }
 .hero {
   position: absolute;
@@ -157,14 +162,6 @@ body {
   height: 50px;
   background: grey;
 }
-.gate::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  width: 1px;
-  height: 50px;
-  background: black;
-}
 .gate_close {
   position: absolute;
   top: 100px;
@@ -215,4 +212,4 @@ body {
   line-height: 70px;
   display: none;
   user-select: none;
-  }
+}
