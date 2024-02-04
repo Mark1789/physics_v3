@@ -1,0 +1,218 @@
+body {
+  background: #0f0b0b;
+  color: white;
+}
+.area {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px solid orangered;
+  overflow-x: scroll;
+}
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: lawngreen;
+  border-radius: 10%;
+  z-index: 1;
+  transform: scale(1,1);
+}
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  width: 7px;
+  height: 4px;
+  background: orangered;
+}
+.arm {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 15px;
+  width: 23px;
+  height: 20px;
+}
+.arm::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 13px;
+  height: 4px;
+  background: lawngreen;
+  border: 1px green solid;
+}
+.coin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 2px;
+  z-index: 1;
+}
+.enemy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height:20px;
+  background: rebeccapurple;
+  border-radius: 10%;
+}
+.pane {
+  position: absolute;
+  background: brown;
+}
+.pane1 {
+  bottom: 40px;
+  left: 0px;
+  width: 200px;
+  height: 10px;
+}
+.pane2 {
+  bottom: 80px;
+  left: 220px;
+  width: 70px;
+  height: 10px;
+}
+.pane3 {
+  bottom: 100px;
+  left: 100px;
+  width: 70px;
+  height: 10px;
+}
+.pane4 {
+  top: 110px;
+  left: 40px;
+  width: 40px;
+  height: 10px;
+}
+.pane5 {
+  top: 90px;
+  left: 190px;
+  width: 70px;
+  height: 10px;
+}
+.pane6 {
+  top: 140px;
+  left: 300px;
+  width: 100px;
+  height: 10px;
+}
+.pane7 {
+  top: 150px;
+  left: 500px;
+  width: 20px;
+  height: 10px;
+}
+.pane8 {
+  top: 220px;
+  left: 600px;
+  width: 20px;
+  height: 10px;
+}
+.pane9 {
+  top: 180px;
+  left: 750px;
+  width: 100px;
+  height: 10px;
+}
+.pane10 {
+  top: 80px;
+  left: 930px;
+  width: 40px;
+  height: 10px;
+}
+.pane11 {
+  top: 160px;
+  left: 930px;
+  width: 40px;
+  height: 10px;
+}
+.pane12 {
+  top: 250px;
+  left: 900px;
+  width: 40px;
+  height: 10px;
+}
+.pane13 {
+  top: 220px;
+  left: 1000px;
+  width: 200px;
+  height: 10px;
+}
+.gate {
+  position: absolute;
+  top: 170px;
+  left: 1100px;
+  width: 41px;
+  height: 50px;
+  background: grey;
+}
+.gate::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 1px;
+  height: 50px;
+  background: black;
+}
+.gate_close {
+  position: absolute;
+  top: 100px;
+  left: 1020px;
+  width: 150px;
+  text-align: center;
+  line-height: 13px;
+  display: none;
+  user-select: none;
+}
+.control {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left, .right, .jump, .shoot, .hit {
+  border: 2px solid limegreen;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+  user-select: none;
+}
+.jump, .hit {
+  margin-left: auto;
+}
+.hit {
+  border-radius: 10px;
+  width: 125px;
+  height: 100px;
+}
+.score_div {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  font-size: 20px;
+  user-select: none;
+}
+.win {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 70px;
+  display: none;
+  user-select: none;
+  }
